@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Output,EventEmitter, } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 @Component({
@@ -17,20 +17,21 @@ export class LoginFormComponent {
     password: ['', Validators.required], 
   });
 
+  @Output() ButtonPressed = new EventEmitter<boolean>();
+
   onSubmit(): void {
     if (this.loginBuilder.valid) {
       const formData = this.loginBuilder.value;
       const storedLoginsString = localStorage.getItem('login');
 
       const storedLogins = storedLoginsString ? JSON.parse(storedLoginsString) : '';
-  
+      console.log(storedLogins);
       if (storedLogins && Array.isArray(storedLogins)) {
         const matchedLogin = storedLogins.find(login => login.email === formData.email && login.password === formData.password);
   
         if (matchedLogin) {
-          //passou
+          alert("logado");
         } else {
-          
           const overlay = document.querySelector('.overlay');
           if (overlay) {
             overlay.setAttribute("style","display:flex;");
@@ -38,6 +39,7 @@ export class LoginFormComponent {
           document.body.style.overflow = 'hidden';
         }
       } else {
+        console.log("teste")
         const overlay = document.querySelector('.overlay');
         if (overlay) {
           overlay.setAttribute("style","display:flex;");
@@ -49,5 +51,9 @@ export class LoginFormComponent {
 
   onSubmitFail(): void{
     alert("Funcionalidade indisponivel no momento. :(");
+  }
+
+  onSubmitSignup():void {
+    this.ButtonPressed.emit(true);
   }
 }

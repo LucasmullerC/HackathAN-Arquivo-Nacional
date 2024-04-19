@@ -1,0 +1,21 @@
+<div class="container-signup">
+    <h1 class="signup-title">Sua jornada histórica começa aqui.</h1>
+
+    <form ngNoForm class="form" [formGroup]="signupBuilder" (ngSubmit)="onSubmit()">
+        <label for="name">Nome</label>
+        <input type="name" id="name" name="name" formControlName="name" required>
+        <br><br>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" formControlName="email" required>
+        <br><br>
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" formControlName="password" required>
+        <br><br>
+        <label for="confirmpassword">Confirmar Senha</label>
+        <input type="password" id="confirmpassword" name="confirmpassword" formControlName="confirmpassword" required>
+        <br>
+        <div class="button-container">
+            <button type="submit">Cadastrar</button>
+        </div>
+    </form>
+</div>

@@ -56,3 +56,7 @@
     width: 550px;
     border-radius: 10px;
 }
+
+.signup-form{
+    display: none;
+}

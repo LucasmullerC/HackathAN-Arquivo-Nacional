@@ -10,7 +10,8 @@
         </div>
 
         <div class="container-form">
-            <app-login-form></app-login-form>
+            <app-login-form (ButtonPressed)="OnbuttonPress($event)" class="login-form"></app-login-form>
+            <app-signup-form (ButtonPressedSignup)="OnbuttonPressSignup($event)" class="signup-form"></app-signup-form>
         </div>
     </div>
 </div>
