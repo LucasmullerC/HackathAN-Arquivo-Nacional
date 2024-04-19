@@ -1,0 +1,58 @@
+@font-face {
+    font-family: Poppins;
+    src: url('../../../assets/fonts/Poppins/Poppins-Bold.ttf');
+  }
+
+.container-login{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.container-login .arquivo-vivo {
+    align-self: flex-end;
+    margin: 50px 64px 125px 650px;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 100px;
+    color: #C4EB00;
+}
+
+.container-login .underline-title {
+    background: #761736;
+    position: absolute;
+    top: 205px;
+    right: 0;
+    width: 720px;
+    height: 26px;
+}
+
+.container-central{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    background-color: #C4EB00;
+    border-radius: 10px;
+
+    margin-bottom: 100px;
+}
+
+.container-image{
+    background-color: #C4EB00;
+    border-radius: 10px;
+}
+
+.tablet-image{
+    width: 600px;
+  }
+
+.container-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    width: 550px;
+    border-radius: 10px;
+}

@@ -1,0 +1,32 @@
+<div class="container-login">
+    <h1 class="login-title">Cada descrição conta uma história.</h1>
+
+    <form ngNoForm class="form" [formGroup]="loginBuilder" (ngSubmit)="onSubmit()">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" formControlName="email" required>
+        <br><br>
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" formControlName="password" required>
+        <br>
+        <div class="button-container">
+            <button type="submit">Jogar</button>
+          </div>
+    </form>
+
+    <div class="socials">
+        <img class="google-image" src="../../assets/images/google1.png" (click)="onSubmitFail()"/>
+
+        <img class="facebook-image" src="../../assets/images/facebook1.png" (click)="onSubmitFail()"/>
+    </div>
+    <br><br>
+    <a class="forgot-password" (click)="onSubmitFail()">Esqueci minha senha></a>
+    <br>
+    <a class="signup">Cadastre - se</a>
+</div>
+
+<div class="overlay">
+    <div class="popup">
+        <p class="error">Conta não encontrada. Faça o cadastro.</p>
+        <a class="signup-button">Castrate - se</a>
+    </div>
+</div>

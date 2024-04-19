@@ -35,7 +35,7 @@
 
   .inicio .arquivo-vivo {
     position: flex;
-    margin: 150px 304px 225px 180px;
+    margin: 50px 304px 225px 180px;
     display: inline-block;
     align-self: self-start;
     overflow-wrap: break-word;
@@ -48,7 +48,7 @@
   .inicio .underline-title {
     background: #761736;
     position: absolute;
-    top: 305px;
+    top: 205px;
     width: 865px;
     height: 26px;
   }
