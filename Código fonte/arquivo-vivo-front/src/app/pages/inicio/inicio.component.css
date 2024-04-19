@@ -1,0 +1,162 @@
+@font-face {
+    font-family: Poppins;
+    src: url('../../../assets/fonts/Poppins/Poppins-Bold.ttf');
+  }
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.inicio .ellipse-2 {
+    transform: rotate(-160.125deg);
+    position: absolute;
+    top: 31.4px;
+    right: -200px;
+    width: 500px;
+    height: 308.2px;
+  }
+  .inicio .ellipse-1 {
+    position: absolute;
+    left: -108px;
+    top: 303px;
+    width: 500px;
+    height: 370.8px;
+  }
+  .inicio .ellipse-3 {
+    position: absolute;
+    top: 90%;
+    right: -90px;
+    width: 807px;
+    height: 390.8px;
+  }
+
+  .inicio .arquivo-vivo {
+    position: flex;
+    margin: 150px 304px 225px 180px;
+    display: inline-block;
+    align-self: self-start;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 100px;
+    color: #C4EB00;
+  }
+
+  .inicio .underline-title {
+    background: #761736;
+    position: absolute;
+    top: 305px;
+    width: 865px;
+    height: 26px;
+  }
+
+  .inicio .title_historiador {
+    position: flex;
+    align-self: self-end;
+    margin-top: -100px;
+
+    display: inline-block;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 40px;
+    color: #FFFFFF;
+    width: 700px;
+  }
+
+  .container-pontos{
+    margin-top: 100px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .container-pontos-image{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .research-image{
+    width: 600px;
+  }
+
+  .container-pontos-title{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .ganhe-pontos{
+    position: flex;
+    display: inline-block;
+    align-self: self-start;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    color: #C4EB00;
+  }
+
+  .ganhe-pontos-desc{
+    position: flex;
+    align-self: self-start;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    max-width: 700px;
+    min-width: 50px
+  }
+
+  .container-jogar{
+    margin-left: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .container-jogar-image{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .winners-image{
+    width: 600px;
+  }
+  .container-jogar-button{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .jogue-agora {
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 40px;
+    color: #0B1449;
+
+    border-radius: 20px;
+    background: #C4EB00;
+    position: relative;
+    margin: 0 108px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30.5px 0 31.5px 0.9px;
+    width: 481px;
+    box-sizing: border-box;
+  }
+
+  .jogue-agora:hover{
+    cursor: pointer;
+  }

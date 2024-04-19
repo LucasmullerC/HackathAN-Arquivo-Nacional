@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+  }
+body{
+    background-color: #0B1449;
+    height: 100vh;
+}
+html,
+body {
+  margin: 0px auto !important;
+  padding: 0;
+}
