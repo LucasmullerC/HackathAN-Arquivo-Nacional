@@ -20,6 +20,8 @@ export class LoginComponent {
     if(login){
       login.setAttribute("style","display:none;");
     }
+
+    document.body.style.overflow = 'auto';
   }
 
   OnbuttonPressSignup(signupbtn:boolean){
@@ -31,5 +33,7 @@ export class LoginComponent {
     if(login){
       login.setAttribute("style","display:block;");
     }
+    
+    document.body.style.overflow = 'auto';
   }
 }

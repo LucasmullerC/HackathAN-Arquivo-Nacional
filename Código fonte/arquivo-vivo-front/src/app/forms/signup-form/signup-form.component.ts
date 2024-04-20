@@ -33,7 +33,10 @@ export class SignupFormComponent {
       const userData = {
         name: formData.name,
         email: formData.email,
-        password: formData.password
+        password: formData.password,
+        loggedIn: false,
+        phase: 1,
+        wins: 0,
       };
   
       let storedLoginsString = localStorage.getItem('login');

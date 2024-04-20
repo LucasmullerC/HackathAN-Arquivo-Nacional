@@ -1,5 +1,6 @@
 import { Component,Output,EventEmitter, } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormsModule,ReactiveFormsModule } from '@angular/forms';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-login-form',
@@ -9,7 +10,7 @@ import { FormBuilder, FormGroup, Validators, FormsModule,ReactiveFormsModule } f
   styleUrl: './login-form.component.css'
 })
 export class LoginFormComponent {
-  constructor(private formBuilder: FormBuilder){
+  constructor(private formBuilder: FormBuilder,private router: Router){
   }
 
   loginBuilder = this.formBuilder.group({
@@ -25,12 +26,13 @@ export class LoginFormComponent {
       const storedLoginsString = localStorage.getItem('login');
 
       const storedLogins = storedLoginsString ? JSON.parse(storedLoginsString) : '';
-      console.log(storedLogins);
       if (storedLogins && Array.isArray(storedLogins)) {
         const matchedLogin = storedLogins.find(login => login.email === formData.email && login.password === formData.password);
   
         if (matchedLogin) {
-          alert("logado");
+          matchedLogin.loggedIn = true;
+          localStorage.setItem('login', JSON.stringify(storedLogins));
+          this.router.navigate(['/jogo']);
         } else {
           const overlay = document.querySelector('.overlay');
           if (overlay) {
@@ -39,7 +41,6 @@ export class LoginFormComponent {
           document.body.style.overflow = 'hidden';
         }
       } else {
-        console.log("teste")
         const overlay = document.querySelector('.overlay');
         if (overlay) {
           overlay.setAttribute("style","display:flex;");

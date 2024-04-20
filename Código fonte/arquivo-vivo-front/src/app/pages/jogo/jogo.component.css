@@ -1,0 +1,165 @@
+@font-face {
+    font-family: Poppins;
+    src: url('../../../assets/fonts/Poppins/Poppins-Bold.ttf');
+  }
+
+.jogo {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 180vh;
+    overflow: hidden;
+}
+.jogo .ellipse-2 {
+    transform: rotate(-160.125deg);
+    position: absolute;
+    top: 240.4px;
+    right: -200px;
+    width: 500px;
+    height: 308.2px;
+    z-index: 1;
+  }
+  .jogo .ellipse-1 {
+    position: absolute;
+    left: -108px;
+    top: 603px;
+    width: 500px;
+    height: 370.8px;
+  }
+  .jogo .ellipse-3 {
+    transform: rotate(-160.125deg);
+    position: absolute;
+    top: 80%;
+    right: -200px;
+    width: 607px;
+    height: 390.8px;
+  }
+
+  .jogo .crowd {
+    position: absolute;
+    top: 80%;
+    right: 0px;
+    width: 507px;
+    height: 390.8px;
+    z-index: 10;
+  }
+
+  .jogo .boy {
+    position: absolute;
+    left: -0px;
+    top: 403px;
+    width: 390px;
+    height: 370.8px;
+  }
+
+  .jogo .greenflag {
+    width: 390px;
+    height: 370.8px;
+  }
+
+  .jogo .flag1{
+    transform: rotate(20.924deg);
+    position: absolute;
+    left: 150px;
+    top: 1200px;
+    z-index: 100;
+  }
+
+  .jogo .flag2{
+    transform: rotate(20.924deg);
+    position: absolute;
+    left: 690px;
+    top: 1140px;
+    z-index: 100;
+  }
+
+  .jogo .flag3{
+    transform: rotate(20.924deg);
+    position: absolute;
+    left: 1020px;
+    top: 750px;
+    z-index: 100;
+  }
+
+  .jogo .flag4{
+    transform: rotate(20.924deg);
+    position: absolute;
+    left: 1100px;
+    top: 230px;
+    z-index: 100;
+  }
+
+  .jogo .vector11 {
+    transform: rotate(-184.924deg);
+    position: absolute;
+    left: 0px;
+    top: -140px;
+    width: 1871.1px;
+    height: 2236.1px;
+  }
+
+  .jogo .redball {
+    width: 250.1px;
+    height: 300.1px;
+  }
+  .redball:hover{
+    cursor: pointer;
+  }
+
+  .greenflag:hover{
+    cursor: pointer;
+  }
+
+  .jogo .phase1{
+    position: absolute;
+    left: 160px;
+    top: 1350px;
+  }
+
+  .jogo .phase2{
+    position: absolute;
+    left: 700px;
+    top: 1280px;
+  }
+
+  .jogo .phase3{
+    position: absolute;
+    left: 1030px;
+    top: 880px;
+  }
+
+  .jogo .phase4{
+    position: absolute;
+    left: 1130px;
+    top: 380px;
+  }
+
+  .jogo .arquivo-vivo {
+    position: flex;
+    margin: 50px 304px 50px 180px;
+    display: inline-block;
+    align-self: self-start;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 100px;
+    color: #C4EB00;
+  }
+
+  .jogo .underline-title {
+    background: #761736;
+    position: absolute;
+    top: 205px;
+    width: 865px;
+    height: 26px;
+  }
+
+  .win-image{
+    width: 80px;
+    margin-left: 50px;
+
+  }
+  .challenge{
+    display: none;
+  }

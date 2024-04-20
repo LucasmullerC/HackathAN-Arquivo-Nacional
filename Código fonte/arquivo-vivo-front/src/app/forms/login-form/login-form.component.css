@@ -175,6 +175,10 @@
     color: #FFFFFF;
 }
 
+.signup-button:hover{
+    cursor: pointer;
+}
+
 .error{
     margin-bottom: 176px;
     display: inline-block;

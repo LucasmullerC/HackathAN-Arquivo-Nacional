@@ -1,0 +1,35 @@
+<div class="jogo" *ngIf="currentUser">
+    <div class="arquivo-vivo">
+        Arquivo vivo
+    </div>
+    <div class="underline-title"></div>
+
+    <div>
+        <img *ngIf="currentUser.wins < 1" class="win-image" src="../../assets/images/win.png" />
+        <img *ngIf="currentUser.wins >= 1" class="win-image" src="../../assets/images/win-active.png" />
+        <img *ngIf="currentUser.wins < 2" class="win-image" src="../../assets/images/win.png" />
+        <img *ngIf="currentUser.wins >= 2" class="win-image" src="../../assets/images/win-active.png" />
+        <img *ngIf="currentUser.wins < 3" class="win-image" src="../../assets/images/win.png" />
+        <img *ngIf="currentUser.wins >= 3" class="win-image" src="../../assets/images/win-active.png" />
+    </div>
+
+    <img class="boy" src="../../assets/images/boy.png" />
+    <img class="crowd" src="../../assets/images/crowd.png" />
+
+    <img *ngIf="currentUser.phase == 1" class="greenflag flag1" src="../../assets/images/greenflag.png" (click)="startChallenge()"/>
+    <img *ngIf="currentUser.phase == 2" class="greenflag flag2" src="../../assets/images/greenflag.png" (click)="startChallenge()"/>
+    <img *ngIf="currentUser.phase == 3" class="greenflag flag3" src="../../assets/images/greenflag.png" (click)="startChallenge()"/>
+    <img *ngIf="currentUser.phase == 4" class="greenflag flag4" src="../../assets/images/greenflag.png" (click)="startChallenge()"/>
+
+
+    <img  class="ellipse-2" src="../../assets/vectors/ellipse110_x2.svg" />
+    <img  class="ellipse-1" src="../../assets/vectors/ellipse110_x2.svg" />
+    <img  class="ellipse-3" src="../../assets/vectors/ellipse32_x2.svg" />
+    <img class="vector11" src="../../assets/vectors/vector11_x2.svg" />
+    <img *ngIf="currentUser.phase == 1" class="redball phase1" src="../../assets/vectors/redball.svg" (click)="startChallenge()"/>
+    <img *ngIf="currentUser.phase == 2" class="redball phase2" src="../../assets/vectors/redball.svg" (click)="startChallenge()"/>
+    <img *ngIf="currentUser.phase == 3" class="redball phase3" src="../../assets/vectors/redball.svg" (click)="startChallenge()" />
+    <img *ngIf="currentUser.phase == 4" class="redball phase4" src="../../assets/vectors/redball.svg" (click)="startChallenge()"/>
+</div>
+
+<app-challenge [imageurl]="this.imageurl" (ButtonPressedChallenge)="OnbuttonPress($event)" class="challenge"></app-challenge>

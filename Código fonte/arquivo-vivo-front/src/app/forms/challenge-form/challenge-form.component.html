@@ -1,0 +1,19 @@
+<div class="container-challenge">
+    <form ngNoForm class="form" [formGroup]="challengeBuilder" (ngSubmit)="onSubmit()">
+        <label for="data" class="date-label">Data:</label>
+        <input type="date" id="data" name="data" formControlName="data" class="date" required>
+        <br><br>
+        <label for="title">Título:</label>
+        <input type="text" id="title" name="title" formControlName="title" required>
+        <br><br>
+        <label for="content">Conteúdo:</label>
+        <textarea id="content" name="content" formControlName="content" required></textarea>
+        <br><br>
+        <label for="accesspoint">Pontos de acesso:</label>
+        <input type="text" id="accesspoint" name="accesspoint" formControlName="accesspoint" required>
+        <br>
+        <div class="button-container">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</div>
